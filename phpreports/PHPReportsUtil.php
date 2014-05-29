@@ -49,7 +49,8 @@
                 //return "C:\AppServ\www\phpreports\";
                 //return "/AppServ/www/phpreports/";
                 //return "/AppServ/www/sia/class/phpreports/";
-				return "/var/www/sia/class/phpreports/";
+				//return "/var/www/sia/class/phpreports/";
+                return dirname(__FILE__);
                 //OJO CAMBIAR AQUI RUTA SIA";
         }
 
