@@ -5,6 +5,7 @@ addCalendar("Calendario2", "Seleccione la Fecha", "txtFechah", "form1");
 addCalendar("Calendario3", "Seleccione la Fecha", "txtFecha", "form1"); //COMPROBANTES 
 addCalendar("Calendario6", "Seleccione la Fecha", "txtfechaanud", "form1"); //CHEQUES ANULADOS
 addCalendar("Calendario7", "Seleccione la Fecha", "txtfechaanuh", "form1");
+
 addCalendar("Calendario9", "Seleccione la Fecha", "txtFechaingresod", "form1"); //NOMINA
 addCalendar("Calendario10", "Seleccione la Fecha", "txtFechaingresoh", "form1");
 addCalendar("Calendario11", "Seleccione la Fecha", "txtFechaegresod", "form1");

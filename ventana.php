@@ -1,4 +1,7 @@
 <?
+foreach($_GET as $key=> $val){
+  ${$key}=$val;
+}
 function arma_patron($formato){ $valor=""; $mcontrol=array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0); $j=0;
   for ($i=0; $i<strlen($formato); $i++) {if (substr($formato,+$i, 1) == "-") {$j++;} else{$mcontrol[$j]++;} }
   $valor="Array(".$mcontrol[0].",".$mcontrol[1].",".$mcontrol[2].",".$mcontrol[3].",".$mcontrol[4].",".$mcontrol[5].",".$mcontrol[6].",".$mcontrol[7].",".$mcontrol[8].",".$mcontrol[9].")";

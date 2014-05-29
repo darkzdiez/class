@@ -564,10 +564,10 @@ function showCal(name) {
 
     if (!hasCal) {
       if (isIE || isOpera6) {
-        calWin=window.open("","cal","toolbar=0,location=0,directories=0,menubar=0,scrollbars=0,resizable=0,width="+calWidth+",height="+calHeight+",left="+(winX+calOffsetX)+",top="+(winY+calOffsetY));
+        calWin=window.open("","cal","toolbar=0,width="+calWidth+",height="+calHeight+",left="+(winX+calOffsetX)+",top="+(winY+calOffsetY));
       }
       else {
-        calWin=window.open("","cal","toolbar=0,location=0,directories=0,menubar=0,scrollbars=0,resizable=0,width="+calWidth+",height="+calHeight+",screenx="+(winX+calOffsetX)+",screeny="+(winY+calOffsetY));
+        calWin=window.open("","cal","toolbar=0,width="+calWidth+",height="+calHeight+",screenx="+(winX+calOffsetX)+",screeny="+(winY+calOffsetY));
       }
     }
 

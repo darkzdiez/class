@@ -48,7 +48,8 @@
                 //return "/var/htdocs/phpreports/";
                 //return "C:\AppServ\www\phpreports\";
                 //return "/AppServ/www/phpreports/";
-                return "/AppServ/www/sia/class/phpreports/";
+                //return "/AppServ/www/sia/class/phpreports/";
+				return "/var/www/sia/class/phpreports/";
                 //OJO CAMBIAR AQUI RUTA SIA";
         }
 
@@ -296,7 +297,7 @@
                 function PHPReportsErrorTr(){
                         $this->_aMsgs = Array();
 
-                        // default Español messages
+                        // default Espa\F1ol messages
                         $this->_aMsgs["OPS"]["default"]                                = "ATENCION, OCURRIO UN ERROR.";
                         $this->_aMsgs["ERROR"]["default"]                        = "Este mensaje de error fue generado por SIA-phpReports.";
                         $this->_aMsgs["NODATA"]["default"]                        = "DATOS NO LOCALIZADO.";
@@ -331,34 +332,34 @@
                         // Brazilian Portuguese messages
                         $this->_aMsgs["OPS"]["pt_BR"]                                        = "OOOOPS, OCORREU UM ERRO AQUI.";
                         $this->_aMsgs["ERROR"]["pt_BR"]                                = "Essa mensagem de erro foi gerada pelo phpReports.";
-                        $this->_aMsgs["NODATA"]["pt_BR"]                                = "Não foram encontrados dados.";
-                        $this->_aMsgs["NOPAGE"]["pt_BR"]                                = "Não há um elemento PAGE (página) no seu relatório.";
-                        $this->_aMsgs["NOIF"]["pt_BR"]                                = "Não há disponível a interface '%s' para banco de dados.";
-                        $this->_aMsgs["REFUSEDCON"]["pt_BR"]                = "Conexão recusada.";
+                        $this->_aMsgs["NODATA"]["pt_BR"]                                = "N\E3o foram encontrados dados.";
+                        $this->_aMsgs["NOPAGE"]["pt_BR"]                                = "N\E3o h\E1 um elemento PAGE (p\E1gina) no seu relat\F3rio.";
+                        $this->_aMsgs["NOIF"]["pt_BR"]                                = "N\E3o h\E1 dispon\EDvel a interface '%s' para banco de dados.";
+                        $this->_aMsgs["REFUSEDCON"]["pt_BR"]                = "Conex\E3o recusada.";
                         $this->_aMsgs["QUERYERROR"]["pt_BR"]                = "Erro na consulta SQL.";
-                        $this->_aMsgs["NOCOLUMNS"]["pt_BR"]                        = "Não foram retornados colunas de dados na sua consulta.";
-                        $this->_aMsgs["PAGEPARSER"]["pt_BR"]                = "Não consegui copiar o conversor de páginas para o diretório temporário.";
-                        $this->_aMsgs["DYNLINK"]["pt_BR"]                        = "Foi especificado um link dinâmico mas não existe um elemento COLUMN.";
-                        $this->_aMsgs["EXPLINK"]["pt_BR"]                        = "Foi especificado um link com uma expressão mas não existe um elemento COLUMN.";
-                        $this->_aMsgs["NOFIELD"]["pt_BR"]                        = "Você está tentando recuperar o <b>VALOR</b> de um campo chamado <b>%s</b>, mas ele não existe na sua consulta. Por favor revise sua consulta.";
-                        $this->_aMsgs["NOFIELDSUM"]["pt_BR"]                = "Você está tentando recuperar a <b>SOMA</b> de um campo chamado <b>%s</b>, mas ele não existe na sua consulta. Por favor revise sua consulta.";
-                        $this->_aMsgs["NOFIELDMAX"]["pt_BR"]                = "Você está tentando recuperar o <b>VALOR MÁXIMO</b> de um campo chamado <b>%s</b>, mas ele não existe na sua consulta. Por favor revise sua consulta.";
-                        $this->_aMsgs["NOFIELDMIN"]["pt_BR"]                = "Você está tentando recuperar o <b>VALOR MÍNIMO</b> de um campo chamado <b>%s</b>, mas ele não existe na sua consulta. Por favor revise sua consulta.";
-                        $this->_aMsgs["NOFIELDAVG"]["pt_BR"]                = "Você está tentando recuperar o <b>VALOR MÉDIO</b> de um campo chamado <b>%s</b>, mas ele não existe na sua consulta. Por favor revise sua consulta.";
-                        $this->_aMsgs["CANTWRITEPAGE"]["pt_BR"]        = "Não consegui escrever o arquivo <b>%s</b> no disco. Verifique suas permissões e espaço em disco.";
-                        $this->_aMsgs["DYNBOOK"]["pt_BR"]                        = "Foi especificado um bookmark dinâmico mas não existe um elemento COLUMN.";
-                        $this->_aMsgs["EXPBOOK"]["pt_BR"]                        = "Foi especificado um bookmark com uma expressão mas não existe um elemento COLUMN.";
-                        $this->_aMsgs["NOXMLTRANS"]["pt_BR"]                = "O parâmetro <b>%s</b> de COL não foi encontrado na tradução para XML.";
-                        $this->_aMsgs["NOXSLT"]["pt_BR"]                                = "Não há um processador XSLT disponível. Verifique se você compilou o PHP com <b>--enable-xslt</b> e a library <a href=\"http://www.gingerall.com/charlie/ga/xml/p_sab.xml\">Sablotron</a> (para o <a href=\"http://www.php.net/manual/en/ref.xslt.php\">PHP4</a>) ou com <b>--enable-xsl</b> (para o <a href=\"http://www.php.net/manual/en/ref.xsl.php\">PHP5</a>).";
-                        $this->_aMsgs["NOPATH"]["pt_BR"]                                = "Parece que você não especificou o path do phpReports com o comando <b>include_path</b> ou no <b>php.ini</b>. Não sei onde as classes estão.";
-                        $this->_aMsgs["NOCODE"]["pt_BR"]                                = "Não pude criar o código de saída para rodar seu relatório. Por favor verifique se o usuário do servidor web tem direitos para escrever no diretório <b>%s</b>.";
-                        $this->_aMsgs["NOXML"]["pt_BR"]                                = "Não pude encontrar o arquivo XML com seus dados (<b>%s</b>) para rodar seu relatório. Por favor verifique o nome do arquivo e se o usuário do servidor web tem direitos de escrita no seu diretório de arquivos temporários.";
-                        $this->_aMsgs["NOXMLSET"]["pt_BR"]                        = "O arquivo XML de entrada <b>%s</b> não foi encontrado.";
-                        $this->_aMsgs["NOXSLTSET"]["pt_BR"]                        = "O arquivo XSLT de entrada <b>%s</b> não foi encontrado.";
-                        $this->_aMsgs["NOPLUGIN"]["pt_BR"]                        = "O plugin de saída <b>%s</b> não existe (<b>%s</b>).";
-                        $this->_aMsgs["NOLOAD"]["pt_BR"]                                = "Não encontrei o arquivo <b>%s</b> para carregar o relatório.";
-                        $this->_aMsgs["NOTEMPLATE"]["pt_BR"]                = "O arquivo de template <b>%s</b> não foi encontrado.";
-                        $this->_aMsgs["INVALIDCON"]["pt_BR"]                = "A variável da conexão com o banco de dados não é válida. %s";
+                        $this->_aMsgs["NOCOLUMNS"]["pt_BR"]                        = "N\E3o foram retornados colunas de dados na sua consulta.";
+                        $this->_aMsgs["PAGEPARSER"]["pt_BR"]                = "N\E3o consegui copiar o conversor de p\E1ginas para o diret\F3rio tempor\E1rio.";
+                        $this->_aMsgs["DYNLINK"]["pt_BR"]                        = "Foi especificado um link din\E2mico mas n\E3o existe um elemento COLUMN.";
+                        $this->_aMsgs["EXPLINK"]["pt_BR"]                        = "Foi especificado um link com uma express\E3o mas n\E3o existe um elemento COLUMN.";
+                        $this->_aMsgs["NOFIELD"]["pt_BR"]                        = "Voc\EA est\E1 tentando recuperar o <b>VALOR</b> de um campo chamado <b>%s</b>, mas ele n\E3o existe na sua consulta. Por favor revise sua consulta.";
+                        $this->_aMsgs["NOFIELDSUM"]["pt_BR"]                = "Voc\EA est\E1 tentando recuperar a <b>SOMA</b> de um campo chamado <b>%s</b>, mas ele n\E3o existe na sua consulta. Por favor revise sua consulta.";
+                        $this->_aMsgs["NOFIELDMAX"]["pt_BR"]                = "Voc\EA est\E1 tentando recuperar o <b>VALOR M\C1XIMO</b> de um campo chamado <b>%s</b>, mas ele n\E3o existe na sua consulta. Por favor revise sua consulta.";
+                        $this->_aMsgs["NOFIELDMIN"]["pt_BR"]                = "Voc\EA est\E1 tentando recuperar o <b>VALOR M\CDNIMO</b> de um campo chamado <b>%s</b>, mas ele n\E3o existe na sua consulta. Por favor revise sua consulta.";
+                        $this->_aMsgs["NOFIELDAVG"]["pt_BR"]                = "Voc\EA est\E1 tentando recuperar o <b>VALOR M\C9DIO</b> de um campo chamado <b>%s</b>, mas ele n\E3o existe na sua consulta. Por favor revise sua consulta.";
+                        $this->_aMsgs["CANTWRITEPAGE"]["pt_BR"]        = "N\E3o consegui escrever o arquivo <b>%s</b> no disco. Verifique suas permiss\F5es e espa\E7o em disco.";
+                        $this->_aMsgs["DYNBOOK"]["pt_BR"]                        = "Foi especificado um bookmark din\E2mico mas n\E3o existe um elemento COLUMN.";
+                        $this->_aMsgs["EXPBOOK"]["pt_BR"]                        = "Foi especificado um bookmark com uma express\E3o mas n\E3o existe um elemento COLUMN.";
+                        $this->_aMsgs["NOXMLTRANS"]["pt_BR"]                = "O par\E2metro <b>%s</b> de COL n\E3o foi encontrado na tradu\E7\E3o para XML.";
+                        $this->_aMsgs["NOXSLT"]["pt_BR"]                                = "N\E3o h\E1 um processador XSLT dispon\EDvel. Verifique se voc\EA compilou o PHP com <b>--enable-xslt</b> e a library <a href=\"http://www.gingerall.com/charlie/ga/xml/p_sab.xml\">Sablotron</a> (para o <a href=\"http://www.php.net/manual/en/ref.xslt.php\">PHP4</a>) ou com <b>--enable-xsl</b> (para o <a href=\"http://www.php.net/manual/en/ref.xsl.php\">PHP5</a>).";
+                        $this->_aMsgs["NOPATH"]["pt_BR"]                                = "Parece que voc\EA n\E3o especificou o path do phpReports com o comando <b>include_path</b> ou no <b>php.ini</b>. N\E3o sei onde as classes est\E3o.";
+                        $this->_aMsgs["NOCODE"]["pt_BR"]                                = "N\E3o pude criar o c\F3digo de sa\EDda para rodar seu relat\F3rio. Por favor verifique se o usu\E1rio do servidor web tem direitos para escrever no diret\F3rio <b>%s</b>.";
+                        $this->_aMsgs["NOXML"]["pt_BR"]                                = "N\E3o pude encontrar o arquivo XML com seus dados (<b>%s</b>) para rodar seu relat\F3rio. Por favor verifique o nome do arquivo e se o usu\E1rio do servidor web tem direitos de escrita no seu diret\F3rio de arquivos tempor\E1rios.";
+                        $this->_aMsgs["NOXMLSET"]["pt_BR"]                        = "O arquivo XML de entrada <b>%s</b> n\E3o foi encontrado.";
+                        $this->_aMsgs["NOXSLTSET"]["pt_BR"]                        = "O arquivo XSLT de entrada <b>%s</b> n\E3o foi encontrado.";
+                        $this->_aMsgs["NOPLUGIN"]["pt_BR"]                        = "O plugin de sa\EDda <b>%s</b> n\E3o existe (<b>%s</b>).";
+                        $this->_aMsgs["NOLOAD"]["pt_BR"]                                = "N\E3o encontrei o arquivo <b>%s</b> para carregar o relat\F3rio.";
+                        $this->_aMsgs["NOTEMPLATE"]["pt_BR"]                = "O arquivo de template <b>%s</b> n\E3o foi encontrado.";
+                        $this->_aMsgs["INVALIDCON"]["pt_BR"]                = "A vari\E1vel da conex\E3o com o banco de dados n\E3o \E9 v\E1lida. %s";
 
                         // English messages
                         $this->_aMsgs["OPS"]["en_EN"]                                = "OOOOPS, THERE'S AN ERROR HERE.";
