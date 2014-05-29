@@ -1,0 +1,6 @@
+Archivos Calendario:
+===================
+
+cal2.js      = Funccion Javascript del calendario.
+cal_conf2.js = archivo de configuracion del calendario
+
